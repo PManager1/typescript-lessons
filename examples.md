@@ -7,7 +7,21 @@
 
 
 
+===================================
+===================================
+<!-- // Objects  -->
 
+let userData: { name:string, age:number } = {
+    name: "max", 
+    age: 24
+};
+
+console.log ( userData);  
+
+userData = {
+    age: 22,
+    name: 'hello', 
+}; 
 
 ===================================
 ===================================
@@ -27,10 +41,10 @@ function multiply ( val1 :number, val2:number ): number {
 //function types 
 let myMultiply: (val1: number, val2: number ) => number;
 
-myMultiply = sayHello; 
+myMultiply = sayHello;    //error 
 myMultiply();
 
-myMultiply = multiply; 
+myMultiply = multiply;   //no error 
 myMultiply(4,2); 
 
 ===================================

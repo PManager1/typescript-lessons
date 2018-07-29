@@ -1,19 +1,14 @@
-let myAge = 23; 
+// Objects 
 
-function sayHello(): void {
-    console.log( "Hello ");
-}
 
-function multiply ( val1 :number, val2:number ): number {
-    return val1 * val2; 
-}
+let userData: { name:string, age:number } = {
+    name: "max", 
+    age: 24
+};
 
-//function types 
-let myMultiply: (val1: number, val2: number ) => number;
+console.log ( userData);  
 
-myMultiply = sayHello; 
-myMultiply();
-
-myMultiply = multiply; 
-myMultiply(4,2); 
-
+userData = {
+    age: 22,
+    name: 'hello', 
+}; 
